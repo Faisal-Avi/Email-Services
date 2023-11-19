@@ -1,0 +1,4 @@
+UPDATE GBL_EMAIL_OUTGOING set email_from = 'erpsdi@dekkogroup.com'
+WHERE EMAIL_FROM = 'dekkoerp@dekkolegacy.com'
+AND EMAIL_STATUS is null;
+COMMIT;
