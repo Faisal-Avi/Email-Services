@@ -11,14 +11,14 @@ while 1==1:
         import smtplib
         import time
 
-        con = cx_Oracle.connect('ideahameem/tejga@175.29.177.85/orclpdb.localdomain')
+        con = cx_Oracle.connect('u/p@ip/orclpdb.localdomain')
 
         cur = con.cursor()
         cur1 = con.cursor()
         print('Searching for new email')
         time.sleep(1)
 
-        smtpserver = {"hameemgroup.com":"erp_tz@hameemgroup.com eR1!4Fa nishat.hameemgroup.com 587 starttls"}
+        smtpserver = {"hameemgroup.com":"erp_tz@hameemgroup.com pass nishat.hameemgroup.com 587 starttls"}
 
         servername = 'nishat.hameemgroup.com'
         loginuser = 'erp_tz@hameemgroup.com'
