@@ -8,7 +8,7 @@ from datetime import datetime
 import cx_Oracle
 import smtplib
 
-con = cx_Oracle.connect('bottomerp/OurSDi3RpT3#mB2@192.168.66.24/dcoproddb1')
+con = cx_Oracle.connect('u/p@192.168.66.24/db')
 
 cur = con.cursor()
 cur3 = con.cursor()
