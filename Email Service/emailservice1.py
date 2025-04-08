@@ -9,16 +9,16 @@ import cx_Oracle
 import smtplib
 
 while 1==1:
-	con = cx_Oracle.connect('bottomerp/OurSDi3RpT3#mB2@192.168.66.30/orcl')
+	con = cx_Oracle.connect('u/p@192.168.66.30/orcl')
 
 	cur = con.cursor()
 	cur1 = con.cursor()
 
-	smtpserver = {"dekkolegacy.com":"dekkoerp@dekkolegacy.com Dekk8985oerP# smtp.office365.com 587 starttls", "dekkogroup.com":"dekkoerp@dekkolegacy.com Dekk8985oerP# smtp.office365.com 587 starttls", "dekkoashulia.com":"erpsdi@dekkoashulia.com Erp@sdi## mail.dekkoashulia.com 465 tls", "dalbd.com":"erpsdi@dalbd.com Erp@sdi##dal mail.dalbd.com 465 tls"}
+	smtpserver = {"dekkolegacy.com":"dekkoerp@dekkolegacy.com 1234 smtp.office365.com 587 starttls", "dekkogroup.com":"dekkoerp@dekkolegacy.com Dekk8985oerP# smtp.office365.com 587 starttls", "dekkoashulia.com":"erpsdi@dekkoashulia.com Erp@sdi## mail.dekkoashulia.com 465 tls", "dalbd.com":"erpsdi@dalbd.com Erp@sdi##dal mail.dalbd.com 465 tls"}
 
 	servername = 'smtp.office365.com'
 	loginuser = 'dekkoerp@dekkolegacy.com'
-	loginpassword = 'Dekk8985oerP#'
+	loginpassword = '123'
 	smtpport = 587
 
 	oracle_sql = '''SELECT REPLACE(REPLACE(REPLACE(email_from, CHR(10)), CHR(13)), CHR(32)) email_from,
